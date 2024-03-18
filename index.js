@@ -1,9 +1,12 @@
 //import sum from "./sum.js";
 import chalk from "chalk";
 
-console.log(chalk.blue("hello world"));
+const beamStudents = ["sam", "marla", "sheik", "ben"];
 
-console.log(chalk.blue("marla"));
-console.log(chalk.blue("Sheikh"));
-console.log(chalk.black("Ben"));
-console.log(chalk.black("Alex"));
+const styleColors = [chalk.blue, chalk.green, chalk.black, chalk.yellow];
+
+console.log(beamStudents);
+
+beamStudents.forEach((beamStudent) => {
+  console.log(beamStudent);
+});
